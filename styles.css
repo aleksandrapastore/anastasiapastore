@@ -113,30 +113,43 @@ body{
     text-align: center;
     font-size: 18px;
   }
+  .cards_container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .card {
-    display: block;
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
     text-decoration: none;
-    color: inherit; /* so text isn't blue */
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   }
   .card-image {
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
   }
-  .card-text {
-    padding: 1rem;
+  .card-content {
+    padding: 15px;
   }
-  .card-text h3 {
-    margin-top: 0;
+  .card-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .card-desc {
+    font-size: 14px;
+    color: #555;
   }
   .btn {
     display: inline-block;
@@ -146,3 +159,26 @@ body{
     color: white;
     border-radius: 4px;
   }
+  .delivery_options_title{
+    text-align: center;
+    margin: 80px;
+  }
+  .delivery_options_container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .delivery_options {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    overflow: hidden;
+  }
+  .delivery_options_content {
+    padding: 15px;
+  }
+  
