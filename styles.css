@@ -109,7 +109,40 @@ body{
     padding-top: 15px;
     padding-bottom:25px;
   }
-  .main_painting_categories_content{
+  .main_painting_categories_title{
     text-align: center;
     font-size: 18px;
+  }
+  .card {
+    display: block;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit; /* so text isn't blue */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .card-image {
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-text {
+    padding: 1rem;
+  }
+  .card-text h3 {
+    margin-top: 0;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 4px;
   }
