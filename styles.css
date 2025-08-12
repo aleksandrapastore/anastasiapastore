@@ -3,7 +3,7 @@ body{
     font:15px/22px arial,sans-serif;
 }
 .site-header{
-    padding: 30px 15px 35px 15px;
+    padding: 30px 15px 25px 15px;
     border: 1.5px solid black;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ body{
     width: 30px; 
     height: 30px;
 }
-.banner {
+.banner_picture {
     position: relative;
     height: 50vh;
 /*Change picture*/
@@ -95,4 +95,21 @@ body{
   .banner_content {
     position: relative;
     z-index: 2;
+  }
+  .banner_text{
+    padding:15px 200px;
+    background-color:#dec1c4;
+    justify-content: space-between;
+  }
+  .banner_text_content{
+    font-size:18px;
+    opacity:0.6;
+  }
+  .main_painting_categories{
+    padding-top: 15px;
+    padding-bottom:25px;
+  }
+  .main_painting_categories_content{
+    text-align: center;
+    font-size: 18px;
   }
