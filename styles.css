@@ -1,0 +1,231 @@
+body{
+    margin: 0px;
+    font:15px/22px arial,sans-serif;
+}
+.site-header{
+    padding: 30px 15px 25px 15px;
+    border: 1.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_left,
+.main_logo,
+.nav_right {
+  flex: 1;
+}
+.menu_list{
+    list-style: none;
+    display:flex;
+    gap: 25px;
+    padding: 0 0 0 25px;
+    margin: 0;
+}
+.menu_list_item {
+    display: inline;
+    padding: 0px 30px 0px 0px;
+}
+.menu_list_item a, .main_logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+.menu_list_item:hover, .main_logo:hover{
+    text-decoration: underline 1.5px;
+    cursor: pointer;
+}
+.main_logo {
+    flex: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.social_list{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 0 40px 0 0;
+    margin: 0;
+}
+.social_list_insta{
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+}
+.instagram_icon{
+    width: 30px; 
+    height: 30px;
+}
+.social_list_whatsapp{
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+}
+.whatsapp_icon{
+    width: 30px; 
+    height: 30px;
+}
+.banner_picture {
+    position: relative;
+    height: 50vh;
+/*Change picture*/
+    background-image: url("/banner_picture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .banner_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
+    z-index: 1;
+  }
+  .banner_content {
+    position: relative;
+    z-index: 2;
+  }
+  .banner_text{
+    padding:15px 200px;
+    background-color:#dec1c4;
+    justify-content: space-between;
+  }
+  .banner_text_content{
+    font-size:18px;
+    opacity:0.6;
+  }
+  .main_painting_categories{
+    padding-top: 15px;
+    padding-bottom:25px;
+  }
+  .main_painting_categories_title{
+    text-align: center;
+    font-size: 18px;
+  }
+  .cards_container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  .card-image {
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-content {
+    padding: 15px;
+  }
+  .card-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .card-desc {
+    font-size: 14px;
+    color: #555;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 4px;
+  }
+  .delivery_options_title{
+    text-align: center;
+    margin: 80px 0 0;
+  }
+  .delivery_options_container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .delivery_options {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    overflow: hidden;
+  }
+  .delivery_options_content {
+    padding: 15px;
+  }
+  .footer{
+    background-color:#dec1c4;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer_content{
+    font-size:18px;
+    text-align: center;
+    opacity:0.6;
+  }
+  .footer_cards_container{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    overflow: hidden;
+  }
+  .bottom_nav {
+    background-color: rgba(0,0,0,1); 
+  }
+  .bottom_nav_list {
+    list-style: none;
+    display:flex;
+    margin: 0px;
+    justify-content: center;
+  }
+  .bottom_nav_list_item {
+    display: inline;
+    padding: 30px;
+  }
+  .bottom_nav_list_item a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+  }
+  .bottom_nav_list_item:hover {
+    text-decoration: underline white 1.5px;
+    cursor: pointer;
+  }
