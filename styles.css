@@ -110,7 +110,6 @@ body{
   }
   .main_painting_categories_title{
     text-align: center;
-    font-size: 18px;
   }
   .cards_container {
     display: flex;
@@ -191,6 +190,10 @@ body{
     text-align: center;
     opacity:0.6;
     padding-bottom: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    white-space: normal;
   }
   .footer_cards_container{
     display: flex;
@@ -237,6 +240,7 @@ body{
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding-top: 15px;
     }
     .main_logo {
       order: 1;
@@ -256,13 +260,12 @@ body{
     .menu_list {
       flex-direction: column;
       align-items: center;
-      /*padding: 30px 0; */
-      margin: 30px;
+      margin: 15px;
       gap: 10px;
     }
     .social_list {
       justify-content: center;
-      padding: 5px 0 0;
+      padding: 10px 0 0;
     }
     .banner_text {
       padding: 15px;
