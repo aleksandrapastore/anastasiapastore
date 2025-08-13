@@ -70,8 +70,7 @@ body{
 .banner_picture {
     position: relative;
     height: 50vh;
-/*Change picture*/
-    background-image: url("./banner_picture.jpg");
+    background-image: url("banner_picture.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -191,6 +190,7 @@ body{
     font-size:18px;
     text-align: center;
     opacity:0.6;
+    padding-bottom: 25px;
   }
   .footer_cards_container{
     display: flex;
@@ -229,3 +229,69 @@ body{
     text-decoration: underline white 1.5px;
     cursor: pointer;
   }
+
+  /* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .site-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .main_logo {
+      order: 1;
+    }
+    .nav_left {
+      order: 2;
+    }
+    .nav_right {
+      order: 3;
+    }
+    .nav_left, .main_logo, .nav_right {
+      flex: unset;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .menu_list {
+      flex-direction: column;
+      align-items: center;
+      /*padding: 30px 0; */
+      margin: 30px;
+      gap: 10px;
+    }
+    .social_list {
+      justify-content: center;
+      padding: 5px 0 0;
+    }
+    .banner_text {
+      padding: 15px;
+    }
+    .cards_container,
+    .delivery_options_container,
+    .footer_cards_container {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .card,
+    .delivery_options,
+    .footer_card {
+      width: 100%;
+      max-width: 350px;
+    }
+    .delivery_options_content{
+      text-align: center;
+    }
+    .bottom_nav_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .bottom_nav_list_item {
+      padding: 10px;
+      font-size: 14px;
+    }
+}
